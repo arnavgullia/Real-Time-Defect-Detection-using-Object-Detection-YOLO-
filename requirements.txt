@@ -1,0 +1,15 @@
+# Real-Time Industrial Defect Detection System (YOLOv8)
+# Tested on Python 3.11.9 (Windows 10/11)
+
+ultralytics==8.4.190
+torch==2.14.1
+torchvision==0.29.1
+opencv-python==4.11.0.86
+pillow==12.1.0
+pandas==2.1.4
+numpy==1.26.4
+matplotlib==3.8.2
+seaborn==0.13.0
+pyyaml==6.0.3
+pytest==9.1.1
+faster-coco-eval==1.8.0

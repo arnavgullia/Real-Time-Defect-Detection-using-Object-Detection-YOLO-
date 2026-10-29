@@ -1,0 +1,4 @@
+split,image_count,total_boxes,avg_boxes_per_image
+test,180,413,2.2944444444444443
+train,1440,3335,2.3159722222222223
+val,180,441,2.45

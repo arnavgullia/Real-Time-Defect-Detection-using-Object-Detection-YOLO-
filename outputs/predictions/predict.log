@@ -1,0 +1,36 @@
+[2026-10-27 17:46:14] [INFO] [Predict]: Loaded weights from C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\baseline\best.pt
+[2026-10-27 17:46:14] [INFO] [Predict]: Running inference on 180 image(s) with conf=0.25, iou=0.45...
+[2026-10-27 17:46:24] [INFO] [Predict]: Predictions completed: 180 images processed. Mean latency: 54.57 ms. Outputs in: C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\predictions
+[2026-10-27 17:47:18] [ERROR] [Predict]: Trained model checkpoint not found at: non_existent_weights.pt. The custom industrial defect detection model must be trained first using 'python src/train_baseline.py'.
+[2026-10-27 18:13:11] [ERROR] [Predict]: Trained model checkpoint not found at: non_existent_weights.pt. The custom industrial defect detection model must be trained first using 'python src/train_baseline.py'.
+[2026-10-27 18:24:01] [INFO] [Predict]: Loaded weights from C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\baseline\best.pt
+[2026-10-27 18:24:01] [INFO] [Predict]: Running inference on 1 image(s) with conf=0.15, iou=0.45...
+[2026-10-27 18:24:04] [INFO] [Predict]: Predictions completed: 1 images processed. Mean latency: 3076.21 ms. Outputs in: C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\predictions
+[2026-10-27 18:24:29] [INFO] [Predict]: Loaded weights from C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\baseline\best.pt
+[2026-10-27 18:24:29] [INFO] [Predict]: Running inference on 1 image(s) with conf=0.1, iou=0.45...
+[2026-10-27 18:24:32] [INFO] [Predict]: Predictions completed: 1 images processed. Mean latency: 2991.66 ms. Outputs in: C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\predictions
+[2026-10-27 18:27:38] [ERROR] [Predict]: Trained model checkpoint not found at: non_existent_weights.pt. The custom industrial defect detection model must be trained first using 'python src/train_baseline.py'.
+[2026-10-27 18:28:45] [INFO] [Predict]: Loaded weights from C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\baseline\best.pt
+[2026-10-27 18:28:45] [WARNING] [Predict]: No valid images found at source: path/to/your_image.jpg
+[2026-10-27 18:30:03] [INFO] [Predict]: Loaded weights from C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\baseline\best.pt
+[2026-10-27 18:30:03] [WARNING] [Predict]: No valid images found at source: path/to/patches_1.jpg
+[2026-10-27 18:30:50] [INFO] [Predict]: Loaded weights from C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\baseline\best.pt
+[2026-10-27 18:30:50] [WARNING] [Predict]: No valid images found at source: C:\Users\arnav\OneDrive\Desktop\APPLIED
+[2026-10-27 18:32:56] [INFO] [Predict]: Loaded weights from C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\baseline\best.pt
+[2026-10-27 18:32:56] [INFO] [Predict]: Running inference on 1 image(s) with conf=0.2, iou=0.45...
+[2026-10-27 18:32:59] [INFO] [Predict]: Predictions completed: 1 images processed. Mean latency: 2952.06 ms. Outputs in: C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\predictions
+[2026-10-27 18:33:41] [INFO] [Predict]: Loaded weights from C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\baseline\best.pt
+[2026-10-27 18:33:41] [INFO] [Predict]: Running inference on 1 image(s) with conf=0.2, iou=0.45...
+[2026-10-27 18:33:44] [INFO] [Predict]: Predictions completed: 1 images processed. Mean latency: 2951.75 ms. Outputs in: C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\predictions
+[2026-10-27 18:34:12] [INFO] [Predict]: Loaded weights from C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\baseline\best.pt
+[2026-10-27 18:34:12] [INFO] [Predict]: Running inference on 1 image(s) with conf=0.15, iou=0.45...
+[2026-10-27 18:34:15] [INFO] [Predict]: Predictions completed: 1 images processed. Mean latency: 2594.76 ms. Outputs in: C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\predictions
+[2026-10-27 18:34:28] [INFO] [Predict]: Loaded weights from C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\baseline\best.pt
+[2026-10-27 18:34:28] [INFO] [Predict]: Running inference on 1 image(s) with conf=0.1, iou=0.45...
+[2026-10-27 18:34:31] [INFO] [Predict]: Predictions completed: 1 images processed. Mean latency: 2595.0 ms. Outputs in: C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\predictions
+[2026-10-27 18:36:46] [INFO] [Predict]: Loaded weights from C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\baseline\best.pt
+[2026-10-27 18:36:46] [INFO] [Predict]: Running inference on 1 image(s) with conf=0.2, iou=0.45...
+[2026-10-27 18:36:49] [INFO] [Predict]: Predictions completed: 1 images processed. Mean latency: 2698.39 ms. Outputs in: C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\predictions
+[2026-10-27 18:37:41] [INFO] [Predict]: Loaded weights from C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\baseline\best.pt
+[2026-10-27 18:37:41] [INFO] [Predict]: Running inference on 180 image(s) with conf=0.2, iou=0.45...
+[2026-10-27 18:37:51] [INFO] [Predict]: Predictions completed: 180 images processed. Mean latency: 48.73 ms. Outputs in: C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\predictions

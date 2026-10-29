@@ -1,0 +1,5 @@
+[2026-10-27 17:37:17] [INFO] [PrepareDataset]: Starting dataset conversion and preparation...
+[2026-10-27 17:37:17] [INFO] [PrepareDataset]: Indexed 1800 unique XML annotations from raw dataset.
+[2026-10-27 17:37:17] [INFO] [PrepareDataset]: Discovered 1440 raw train images, 360 raw validation images.
+[2026-10-27 17:37:17] [INFO] [PrepareDataset]: Assigned splits -> Train: 1440, Val: 180, Test: 180
+[2026-10-27 17:37:26] [INFO] [PrepareDataset]: Conversion complete! data.yaml and reports generated.

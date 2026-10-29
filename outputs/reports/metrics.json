@@ -1,0 +1,5 @@
+{
+  "status": "PENDING_TRAINING",
+  "message": "Checkpoint non_existent_weights.pt does not exist yet. Run src/train_baseline.py first.",
+  "timestamp": "2026-10-27 18:27:38"
+}

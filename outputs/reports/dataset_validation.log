@@ -1,0 +1,6 @@
+[2026-10-27 17:38:24] [INFO] [ValidateDataset]: Starting comprehensive dataset validation...
+[2026-10-27 17:38:24] [INFO] [ValidateDataset]: Verified data.yaml: 6 classes configured.
+[2026-10-27 17:38:43] [INFO] [ValidateDataset]: Split 'train' PASSED: 1440 images, 3335 boxes.
+[2026-10-27 17:38:46] [INFO] [ValidateDataset]: Split 'val' PASSED: 180 images, 441 boxes.
+[2026-10-27 17:38:48] [INFO] [ValidateDataset]: Split 'test' PASSED: 180 images, 413 boxes.
+[2026-10-27 17:38:48] [INFO] [ValidateDataset]: Generated 18 visual annotation verification samples in C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\reports\annotation_checks

@@ -1,0 +1,132 @@
+# ==============================================================================
+# Research Experiment Matrix: Real-Time Industrial Defect Detection (NEU-DET)
+# Controlled comparative evaluation across architecture, resolution, augmentations, and anchors.
+# ==============================================================================
+
+global_settings:
+  project_name: "neu_det_surface_defects"
+  dataset_yaml: "datasets/defect_dataset/data.yaml"
+  random_seed: 42
+  num_classes: 6
+  classes:
+    - crazing
+    - inclusion
+    - patches
+    - pitted_surface
+    - rolled-in_scale
+    - scratches
+
+# Phase 1: Baseline Configuration
+baseline:
+  id: "exp_01_baseline_yolov8n"
+  description: "Standard YOLOv8n baseline pretrained on COCO, 640px input, SGD/AdamW defaults"
+  model: "yolov8n.pt"
+  epochs: 50
+  imgsz: 640
+  batch: 16
+  optimizer: "auto"
+  lr0: 0.01
+  lrf: 0.01
+  momentum: 0.937
+  weight_decay: 0.0005
+  warmup_epochs: 3.0
+  patience: 15
+  save_period: -1
+  device: "auto"
+  output_dir: "outputs/baseline"
+
+# Phase 2: Input Resolution Sensitivity (Variables: imgsz; Controls: batch, lr, model)
+experiments_resolution:
+  - id: "exp_02_res_320"
+    name: "Resolution 320x320"
+    rationale: "Fast edge-inferencing; tests feature degradation on micro-inclusions"
+    model: "yolov8n.pt"
+    imgsz: 320
+    epochs: 40
+    batch: 16
+    output_dir: "outputs/experiments/res_320"
+
+  - id: "exp_03_res_640"
+    name: "Resolution 640x640"
+    rationale: "Balanced standard; matches baseline for direct comparison"
+    model: "yolov8n.pt"
+    imgsz: 640
+    epochs: 40
+    batch: 16
+    output_dir: "outputs/experiments/res_640"
+
+  - id: "exp_04_res_960"
+    name: "Resolution 960x960"
+    rationale: "High resolution for micro-crack detection; higher compute cost"
+    model: "yolov8n.pt"
+    imgsz: 960
+    epochs: 40
+    batch: 8
+    output_dir: "outputs/experiments/res_960"
+
+# Phase 3: Augmentation Strategy (Variables: flip, mosaic, mixup; Controls: imgsz=640, lr0=0.01)
+experiments_augmentation:
+  - id: "exp_05_aug_none"
+    name: "Minimal Augmentation"
+    rationale: "No mosaic or mixup; raw distribution benchmark"
+    model: "yolov8n.pt"
+    imgsz: 640
+    epochs: 40
+    batch: 16
+    mosaic: 0.0
+    mixup: 0.0
+    fliplr: 0.0
+    flipud: 0.0
+    output_dir: "outputs/experiments/aug_minimal"
+
+  - id: "exp_06_aug_defect_preserving"
+    name: "Domain Defect-Preserving Augmentation"
+    rationale: "Flips (both H & V) preserved since rolled steel moves bidirectionally; mild HSV; mosaic disabled last 10 epochs"
+    model: "yolov8n.pt"
+    imgsz: 640
+    epochs: 40
+    batch: 16
+    mosaic: 0.5
+    mixup: 0.1
+    fliplr: 0.5
+    flipud: 0.5
+    hsv_h: 0.015
+    hsv_s: 0.4
+    hsv_v: 0.3
+    close_mosaic: 10
+    output_dir: "outputs/experiments/aug_defect_preserving"
+
+# Phase 4: Model Scale Comparison (Variables: backbone size; Controls: imgsz=640, epochs=40)
+experiments_model_scale:
+  - id: "exp_07_model_yolov8s"
+    name: "YOLOv8s Scale Comparison"
+    rationale: "Tests if deeper representation (~11.2M params) improves mAP on severe craze-cracks"
+    model: "yolov8s.pt"
+    imgsz: 640
+    epochs: 40
+    batch: 8
+    output_dir: "outputs/experiments/model_yolov8s"
+
+# Phase 5: Anchor-Box Research Study (YOLOv5n Benchmark)
+# NOTE: YOLOv8 is an anchor-free architecture (TaskAlignedAssigner).
+# To rigorously evaluate anchor clustering (k-means vs default COCO anchors),
+# a parallel YOLOv5n benchmark protocol is defined.
+experiments_anchor_study:
+  protocol: "yolov5n_anchor_benchmark"
+  description: "Evaluate impact of k-means autoanchor reclustering tailored to NEU-DET bounding box aspect ratios"
+  dataset_source: "datasets/defect_dataset/data.yaml"
+  k_clusters: 9
+  metric_comparison:
+    - precision
+    - recall
+    - mAP50
+    - mAP50_95
+    - inference_latency_ms
+    - model_size_mb
+  configurations:
+    - id: "exp_08_yolov5_default_anchors"
+      anchors: "default_coco"
+      description: "Default anchors derived from general COCO object ratios"
+    - id: "exp_09_yolov5_dataset_fitted_anchors"
+      anchors: "kmeans_clustered"
+      description: "Custom anchors fitted via k-means genetic evolution on NEU-DET defect aspect ratios"

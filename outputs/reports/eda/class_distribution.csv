@@ -1,0 +1,7 @@
+class_name,image_count,instance_count,imbalance_ratio_to_max,percentage_of_all_boxes
+crazing,300,689,1.467,16.45
+inclusion,382,1011,1.0,24.13
+patches,342,881,1.148,21.03
+pitted_surface,301,432,2.34,10.31
+rolled-in_scale,300,628,1.61,14.99
+scratches,300,548,1.845,13.08

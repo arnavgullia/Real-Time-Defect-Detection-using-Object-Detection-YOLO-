@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETED",
+  "run_directory": "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\baseline\\test_cpu_speed",
+  "best_weights": "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\baseline\\test_cpu_speed\\weights\\best.pt",
+  "training_duration_sec": 154.76,
+  "epochs_trained": 1,
+  "device_used": "cpu"
+}

@@ -1,0 +1,15 @@
+[2026-10-27 17:41:47] [INFO] [TrainBaseline]: Initializing YOLOv8 Baseline Training Pipeline...
+[2026-10-27 17:41:47] [INFO] [TrainBaseline]: System Configuration: {
+  "os": "Windows",
+  "os_release": "10",
+  "python_version": "3.11.9",
+  "pytorch_version": "2.14.1+cpu",
+  "cuda_available": false,
+  "device_name": "CPU",
+  "device_count": 0
+}
+[2026-10-27 17:41:47] [INFO] [TrainBaseline]: Selected computation device: 'cpu'
+[2026-10-27 17:41:47] [WARNING] [TrainBaseline]: CUDA is not available. Training will run on CPU. Batch size and workers will be optimized for host CPU stability.
+[2026-10-27 17:41:49] [INFO] [TrainBaseline]: Starting model.train() with yolov8n.pt for 1 epochs at imgsz=320...
+[2026-10-27 17:44:23] [INFO] [TrainBaseline]: Training successfully completed in 2.58 minutes (154.8 s).
+[2026-10-27 17:44:23] [INFO] [TrainBaseline]: Copied best model weights to: C:\Users\arnav\OneDrive\Desktop\APPLIED AI 2\outputs\baseline\best.pt

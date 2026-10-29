@@ -1,0 +1,52 @@
+{
+  "total_images": 1800,
+  "total_boxes": 4189,
+  "class_counts": {
+    "crazing": 689,
+    "inclusion": 1011,
+    "patches": 881,
+    "pitted_surface": 432,
+    "rolled-in_scale": 628,
+    "scratches": 548
+  },
+  "split_stats": {
+    "train": {
+      "image_count": 1440,
+      "box_count": 3335,
+      "class_distribution": {
+        "crazing": 527,
+        "inclusion": 852,
+        "patches": 688,
+        "pitted_surface": 345,
+        "rolled-in_scale": 496,
+        "scratches": 427
+      }
+    },
+    "val": {
+      "image_count": 180,
+      "box_count": 441,
+      "class_distribution": {
+        "crazing": 82,
+        "inclusion": 87,
+        "patches": 100,
+        "pitted_surface": 41,
+        "rolled-in_scale": 70,
+        "scratches": 61
+      }
+    },
+    "test": {
+      "image_count": 180,
+      "box_count": 413,
+      "class_distribution": {
+        "crazing": 80,
+        "inclusion": 72,
+        "patches": 93,
+        "pitted_surface": 46,
+        "rolled-in_scale": 62,
+        "scratches": 60
+      }
+    }
+  },
+  "issues": [],
+  "excluded_images": []
+}

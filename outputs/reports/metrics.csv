@@ -1,0 +1,8 @@
+Metric,Precision,Recall,mAP50,mAP50_95,Mean_Latency_ms,FPS,Model_Size_MB
+Overall,0.3692,0.1131,0.0287,0.0086,28.78,34.7,6.16
+crazing,1.0,0.0,0.0016,0.0004,,,
+inclusion,0.0281,0.1724,0.017,0.0064,,,
+patches,0.0276,0.27,0.0231,0.0075,,,
+pitted_surface,0.146,0.2195,0.1162,0.0326,,,
+rolled-in_scale,1.0,0.0,0.0133,0.0042,,,
+scratches,0.0136,0.0164,0.0011,0.0003,,,

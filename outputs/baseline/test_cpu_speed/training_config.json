@@ -1,0 +1,18 @@
+{
+  "model": "yolov8n.pt",
+  "data": "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\datasets\\defect_dataset\\data.yaml",
+  "epochs": 1,
+  "imgsz": 320,
+  "batch": 16,
+  "device": "cpu",
+  "seed": 42,
+  "deterministic": true,
+  "patience": 15,
+  "workers": 2,
+  "project": "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\baseline",
+  "name": "test_cpu_speed",
+  "exist_ok": true,
+  "pretrained": true,
+  "optimizer": "auto",
+  "verbose": true
+}

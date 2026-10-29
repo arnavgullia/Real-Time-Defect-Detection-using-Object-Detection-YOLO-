@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.cache
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# PyTorch / Ultralytics assets & runs
+runs/
+*.pt
+!yolov8n.pt
+wandb/
+
+# Temporary / Scratch data
+*.tmp
+*.temp
+outputs/inspection_history.db
+outputs/predictions/*.jpg
+!outputs/predictions/prediction_results.json
+
+# Streamlit config / cache
+.streamlit/
+
+# OS-generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE configs
+.idea/
+.vscode/

@@ -1,0 +1,80 @@
+{
+  "dataset_root": "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\datasets\\defect_dataset",
+  "data_yaml_valid": true,
+  "splits": {
+    "train": {
+      "split": "train",
+      "image_count": 1440,
+      "label_count": 1440,
+      "total_boxes": 3335,
+      "class_counts": {
+        "crazing": 527,
+        "inclusion": 852,
+        "patches": 688,
+        "pitted_surface": 345,
+        "rolled-in_scale": 496,
+        "scratches": 427
+      },
+      "errors": [],
+      "warnings": [],
+      "passed": true
+    },
+    "val": {
+      "split": "val",
+      "image_count": 180,
+      "label_count": 180,
+      "total_boxes": 441,
+      "class_counts": {
+        "crazing": 82,
+        "inclusion": 87,
+        "patches": 100,
+        "pitted_surface": 41,
+        "rolled-in_scale": 70,
+        "scratches": 61
+      },
+      "errors": [],
+      "warnings": [],
+      "passed": true
+    },
+    "test": {
+      "split": "test",
+      "image_count": 180,
+      "label_count": 180,
+      "total_boxes": 413,
+      "class_counts": {
+        "crazing": 80,
+        "inclusion": 72,
+        "patches": 93,
+        "pitted_surface": 46,
+        "rolled-in_scale": 62,
+        "scratches": 60
+      },
+      "errors": [],
+      "warnings": [],
+      "passed": true
+    }
+  },
+  "total_images": 1800,
+  "total_boxes": 4189,
+  "overall_passed": true,
+  "visual_checks_generated": [
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_train_scratches_198.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_train_crazing_89.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_train_crazing_145.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_train_patches_174.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_train_patches_118.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_train_inclusion_79.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_val_inclusion_250.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_val_crazing_295.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_val_scratches_289.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_val_rolled-in_scale_276.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_val_crazing_286.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_val_scratches_242.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_test_pitted_surface_274.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_test_crazing_255.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_test_crazing_254.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_test_crazing_287.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_test_inclusion_294.jpg",
+    "C:\\Users\\arnav\\OneDrive\\Desktop\\APPLIED AI 2\\outputs\\reports\\annotation_checks\\check_test_inclusion_298.jpg"
+  ]
+}

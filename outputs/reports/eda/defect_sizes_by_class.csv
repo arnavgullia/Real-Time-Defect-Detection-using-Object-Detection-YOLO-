@@ -1,0 +1,8 @@
+class_name,Large (>96² px),Medium (32²-96² px),Small (<32² px),All
+crazing,294,395,0,689
+inclusion,36,646,329,1011
+patches,141,684,56,881
+pitted_surface,374,55,3,432
+rolled-in_scale,110,502,16,628
+scratches,12,493,43,548
+All,967,2775,447,4189
